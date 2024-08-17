@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Iris Classification</title>
+</head>
+<body>
+    <form action="{{ url_for('predict')}}" method="POST">
+        Sepal-Length:  <input type="number" name="sepal_length"></br>
+        Sepal_Width:   <input type="number" name="sepal_width"></br>
+	Petal_Length:  <input type="number" name="petal_length"></br>
+	Petal_Width:   <input type="number" name="petal_width"></br>
+      
+        <input type=submit value=Submit>
+   </form>
+    My final prediction: {{ predict }}
+</body>
+</html>
